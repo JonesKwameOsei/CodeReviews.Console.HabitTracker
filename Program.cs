@@ -43,7 +43,7 @@ void MainMenu()
           WalkingMenu(walkingTracker);
           break;
         case "📊 View All Statistics":
-          ShowCombinedStatistics(walkingTracker);
+          ShowCombinedStatistics();
           ClearConsoleAndWait();
           break;
         case "❌ Quit Application":
@@ -196,7 +196,7 @@ void WalkingMenu(WalkTracker walkingTracker)
   }
 }
 
-void ShowCombinedStatistics(WalkTracker walkingTracker)
+void ShowCombinedStatistics()
 {
   try
   {
