@@ -5,6 +5,9 @@ and SQLite. Log, update, and review your daily habits with ease!
 
 ---
 
+> Note: For the best UI experience, run the App on a Unix based terminal or
+> console (GitBash on Windows).
+
 ## 📑 Table of Contents
 
 - [Overview](#overview)
