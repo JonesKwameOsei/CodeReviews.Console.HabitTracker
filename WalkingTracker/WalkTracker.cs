@@ -282,7 +282,7 @@ internal class WalkTracker
     try
     {
       Console.Clear();
-      Panel panel = new Panel(new Text("✏️  UPDATE WALKING RECORD", new Style(Color.Yellow, Color.Black, Decoration.Bold)))
+      Panel panel = new Panel(new Text("✏️  UPDATE WALKING RECORD", new Style(Color.Yellow, Color.Default, Decoration.Bold)))
           .Border(BoxBorder.Rounded)
           .BorderColor(Color.Yellow);
       AnsiConsole.Write(panel);
@@ -300,7 +300,7 @@ internal class WalkTracker
       int recordId;
       try
       {
-        recordId = AnsiConsole.Ask<int>("🪪 Enter the [cyan]ID[/] of the record you want to update (or [red]0[/] to cancel):");
+        recordId = AnsiConsole.Ask<int>("Enter the [cyan]ID[/] of the record you want to update (or [red]0[/] to cancel):");
       }
       catch (Exception ex)
       {
