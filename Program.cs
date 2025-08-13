@@ -2,7 +2,6 @@
 using Microsoft.Data.Sqlite;
 using Spectre.Console;
 using System.Data;
-using System.Globalization;
 using System.Reflection.PortableExecutable;
 
 string connectionString = "Data Source=habit-Tracker.db";
@@ -44,7 +43,7 @@ void MainMenu()
           WalkingMenu(walkingTracker);
           break;
         case "📊 View All Statistics":
-          ShowCombinedStatistics(waterTracker, walkingTracker);
+          ShowCombinedStatistics(walkingTracker);
           ClearConsoleAndWait();
           break;
         case "❌ Quit Application":
@@ -197,7 +196,7 @@ void WalkingMenu(WalkTracker walkingTracker)
   }
 }
 
-void ShowCombinedStatistics(WaterTracker waterTracker, WalkTracker walkingTracker)
+void ShowCombinedStatistics(WalkTracker walkingTracker)
 {
   try
   {
